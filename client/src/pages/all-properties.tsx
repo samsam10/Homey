@@ -108,7 +108,7 @@ const AllProperties = () => {
                             >
                                     
                                     <MenuItem value="">All</MenuItem>
-                                    {['Apartment', 'Villa', 'Farmhouse', 'Condos', 'Townhouse', 'Duplex', 'Studio', 'Chalet']
+                                    {['Apartment', 'Villa', 'Farmhouse', 'Mansion', 'Townhouse', 'Duplex', 'Studio', 'Chalet']
                                       .map((type)=>(<MenuItem key={type} value={type.toLocaleLowerCase()}>
                                                   {type}
                                               </MenuItem>))

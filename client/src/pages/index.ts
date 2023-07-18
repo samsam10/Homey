@@ -1,6 +1,7 @@
 import AgentProfile from './agent-profile';
 import Agents from './agent';
 import AllProperties from './all-properties';
+import Reviews from './reviews';
 import CreateProperty from './create-property';
 import Home from './home';
 import { Login } from './login';
@@ -18,4 +19,5 @@ export {
   MyProfile,
   PropertyDetails,
   EditProperty,
+  Reviews
 };

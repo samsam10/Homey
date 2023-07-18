@@ -30,9 +30,16 @@ export const Login: React.FC = () => {
           },
         });
         window.google.accounts.id.renderButton(divRef.current, {
-          theme: "filled_blue",
-          size: "medium",
-          type: "standard",
+        
+          theme: "filled_blue", // Blue theme for the button
+          size: "medium", // Medium-sized button
+          type: "standard", // Standard Google sign-in button
+          // shape: "rect", // Rectangular button shape
+          width: "350px", // Custom width for the button
+          // height: "50px", // Custom height for the button
+          // text: "Sign in with Google", // Custom button text
+          // disabled: false, // Enable the button
+  
         });
       } catch (error) {
         console.log(error);
@@ -72,7 +79,7 @@ export const Login: React.FC = () => {
             <img src={yariga} alt="yariga Logo" />
           </div>
           <Box mt={4}>
-            <GoogleButton />
+            <GoogleButton  />
           </Box>
         </Box>
       </Container>

@@ -12,6 +12,7 @@ import {
   AccountCircleOutlined,
  ChatBubbleOutline,
  PeopleAltOutlined,
+//  Reviews,
 //  StarOutlineOutlined,
  StarOutlineRounded,
  VillaOutlined
@@ -42,6 +43,9 @@ import {
 import { profile } from "console";
 import messages from "pages/messages";
 import Messages from "pages/messages";
+import Reviews from "pages/reviews";
+// import ReviewForm from "pages/ReviewForm";
+import CreateReview from "pages/create-Review";
 
 
 
@@ -67,6 +71,7 @@ function App() {
 
         //  let's save to mongoDB
         if(profileObj){
+          // const response = await fetch('https://home-5lpn.onrender.com/api/v1/users', {
           const response = await fetch('http://localhost:8080/api/v1/users', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -145,6 +150,7 @@ function App() {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
+          // dataProvider={dataProvider('https://home-5lpn.onrender.com/api/v1')}
           dataProvider={dataProvider('http://localhost:8080/api/v1')}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
@@ -173,16 +179,19 @@ function App() {
 
              
             },
-            {
-              name: "reviews",
-              list: Home,
-              icon: <StarOutlineRounded/>
+            // {
+            //   name: "reviews",
+            //   list: Reviews,
+            //   create: CreateReview,
+
+            //   // show: ReviewForm,
+            //   icon: <StarOutlineRounded/>
 
              
-            },
+            // },
             {
               name: "messages",
-              list: Messages,
+              list: Home,
               icon: <ChatBubbleOutline/>
 
              

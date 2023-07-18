@@ -3,7 +3,7 @@ import { FormProps } from 'interfaces/common'
 import CustomButton from './CustomButton'
 
 
-const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onFinishHandler, propertyImage}: FormProps) => (
+const FormReview = ({type, register, handleSubmit, handleImageChange, formLoading, onFinishHandler, propertyImage}: FormProps) => (
   <Box>
     <Typography fontSize={25} fontWeight={700} color="#11142d">
       {type} a Property
@@ -81,4 +81,4 @@ const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onF
   </Box>
 )
 
-export default Form
+export default FormReview

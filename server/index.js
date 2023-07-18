@@ -5,6 +5,7 @@ import connectDB from './mongodb/connect.js'
 
 import propertyRouter from './routes/property.routes.js'
 import userRouter from  './routes/user.routes.js'
+// import reviewRouter from  './routes/user.routes.js'
 
 
 
@@ -22,6 +23,7 @@ app.get('/', (req, res)=>{
 
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/properties', propertyRouter)
+// app.use('/api/v1/reviews', reviewRouter)
 
 const startServer = async() => {
  
